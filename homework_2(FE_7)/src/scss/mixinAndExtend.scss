@@ -1,0 +1,39 @@
+
+%list-delete-style {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%center-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin textSize($font-weight, $font-size, $line-height, $text-transform) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: $text-transform;
+}
+
+@mixin keyframes($name){
+  @keyframes #{$name}{
+    @content;
+  }
+}
+
+@mixin animate($animation,$duration,$method,$times){
+  animation: $animation $duration $method $times;
+
+}
+

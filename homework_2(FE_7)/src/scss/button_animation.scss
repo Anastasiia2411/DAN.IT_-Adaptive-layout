@@ -1,0 +1,134 @@
+
+.animation1 {
+  @include keyframes(animation1) {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @include animate(animation1, .1s, linear, 1);
+  animation-fill-mode: forwards;
+}
+
+
+.animation2 {
+  @include keyframes(animation2) {
+    50% {
+      top: 50%;
+    }
+    75% {
+      top: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 50%;
+      transform: rotate(47deg);
+    }
+  }
+  @include animate(animation2, .3s, linear, 1);
+}
+
+.animation3 {
+  @include keyframes(animation3) {
+    50% {
+      top: 50%;
+    }
+    75% {
+      top: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 50%;
+      transform: rotate(-47deg);
+    }
+  }
+  @include animate(animation3, .3s, linear, 1);
+}
+
+
+.animation1-reverse {
+  @include keyframes(animation1-reverse) {
+    0% {
+      top: 50%;
+      transform: rotate(-47deg);
+    }
+    50% {
+      top: 50%;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 25%;
+    }
+  }
+  @include animate(animation1-reverse, .3s, linear, 1);
+}
+
+.animation2-reverse {
+  @include keyframes(animation2-reverse) {
+    0% {
+      top: 50%;
+      transform: rotate(47deg);
+    }
+    50% {
+      top: 50%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 69%;
+    }
+  }
+  @include animate(animation2-reverse, .3s, linear, 1);
+}
+
+.animation3-reverse {
+  @include keyframes(animation3-reverse) {
+    0% {
+      overflow: hidden;
+      opacity: 0;
+    }
+    100% {
+      overflow: visible;
+      opacity: 1;
+    }
+  }
+  @include animate(animation3-reverse, .4s, linear, 1);
+}
+
+.animation-for-list {
+  @include keyframes(animation-for-list) {
+    0% {
+      overflow: hidden;
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      overflow: visible;
+      opacity: 1;
+      height: 208px;
+    }
+  }
+  @include animate(animation-for-list, .3s, linear, 1);
+  animation-fill-mode: forwards;
+}
+
+.animation-for-list-reverse {
+  @include keyframes(animation-for-list-reverse) {
+    0% {
+      overflow: visible;
+      opacity: 1;
+      height: 208px;
+    }
+    100% {
+      overflow: hidden;
+      opacity: 0;
+      height: 0;
+    }
+  }
+  @include animate(animation-for-list-reverse, .2s, linear, 1);
+  animation-fill-mode: forwards;
+}

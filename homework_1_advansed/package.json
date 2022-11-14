@@ -1,0 +1,28 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Mielnikova Anastasiia FE_7_online(Frontend)",
+  "main": "app.js",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.27.0",
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "start": "node project-x/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/Asy21/fe_7frontend_homeworks.git"
+  },
+  "author": "Anastasiia Mielnikova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Asy21/fe_7frontend_homeworks/issues"
+  },
+  "homepage": "https://gitlab.com/Asy21/fe_7frontend_homeworks#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "moment": "^2.29.4"
+  }
+}
