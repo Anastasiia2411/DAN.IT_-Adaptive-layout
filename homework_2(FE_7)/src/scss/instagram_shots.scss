@@ -1,0 +1,32 @@
+.instagram_shots {
+  &_header_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_link {
+    @include textSize(700, 13px, 22px, uppercase);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &_list {
+    @extend %list-delete-style;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 10px;
+
+    &_el {
+      flex-basis: 25%;
+    }
+
+    &_el img {
+      max-width: 100%;
+    }
+  }
+}
+
+.instagram_shots-min-header {
+  display: none;
+}

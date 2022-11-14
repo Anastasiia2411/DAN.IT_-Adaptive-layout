@@ -1,0 +1,117 @@
+@media screen and (max-width: 320px) {
+  .section_header {
+    margin-top: 38px;
+  }
+  .recent_post_list {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 45px;
+    &_el:nth-child(4) {
+      display: none;
+    }
+
+    &_el {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      &_text_container {
+        text-align: start;
+        margin-left: 0;
+      }
+
+      &_text_paragraph {
+        display: none;
+      }
+    }
+  }
+  .instagram_shots_list_el:nth-child(4),
+  .instagram_shots_list_el:nth-child(2),
+  .instagram_shots_list_el:nth-child(3),
+  {
+    display: none;
+  }
+  .instagram_shots_list {
+    display: block;
+  }
+  .instagram_shots_list_el {
+    flex-basis: 100%;
+    width: 100%;
+    &_img {
+      width: 100%;
+    }
+  }
+  .instagram_shots_link {
+    display: none;
+  }
+  .instagram_shots-max-header {
+    display: none;
+  }
+  .instagram_shots-min-header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_header {
+    margin-top: 38px;
+  }
+  .nav_list {
+    display: none;
+  }
+
+  .header_button_container {
+    display: flex;
+  }
+  .first_button_img {
+    position: absolute;
+    top: 25%;
+    left: 13px;
+    animation-fill-mode: forwards;
+  }
+
+  .second_button_img {
+    position: absolute;
+    top: 47%;
+    left: 13px;
+    animation-fill-mode: forwards;
+  }
+
+  .third_button_img {
+    position: absolute;
+    top: 69%;
+    left: 13px;
+    animation-fill-mode: forwards;
+  }
+  .recent_post_list {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 45px;
+
+    &_el {
+      display: flex;
+      flex-basis: 50%;
+    }
+  }
+  .instagram_shots_list {
+    justify-content: center;
+    gap: 10px;
+
+    &_el {
+      flex-basis: 33%;
+
+      &_el:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .click_list_container {
+    display: none;
+  }
+}
+
