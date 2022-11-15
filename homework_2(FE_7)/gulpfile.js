@@ -30,6 +30,11 @@ function scss() {
         .pipe(dest("dist"))
 }
 
+function css(){
+    return src("src/normalizeCss/*.css")
+        .pipe(dest("dist"))
+}
+
 
 function js() {
     return src("src/js/**.js")
@@ -61,9 +66,7 @@ function serve() {
     watch("src/img/*.png", series(imageMin)).on("change", sync.reload)
 }
 
-exports.clear = clear
-exports.scss = scss
-exports.build = series(clear, scss, js, imageMin)
+exports.build = series(clear, css, scss, js, imageMin)
 exports.dev = series(serve)
 
 
