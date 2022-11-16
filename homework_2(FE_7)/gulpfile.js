@@ -63,7 +63,6 @@ function serve() {
 
     watch("src/js/**.js", series(js)).on("change", sync.reload)
     watch("src/scss/**.scss", series(scss)).on("change", sync.reload)
-    watch("src/img/*.png", series(imageMin)).on("change", sync.reload)
 }
 
 exports.build = series(clear, css, scss, js, imageMin)

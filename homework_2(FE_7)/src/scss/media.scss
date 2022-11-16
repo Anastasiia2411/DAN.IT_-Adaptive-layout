@@ -97,16 +97,16 @@
   .instagram_shots_list {
     justify-content: center;
     gap: 10px;
+  }
+  .instagram_shots_list_el {
+    flex-basis: 33%;
+  }
 
-    &_el {
-      flex-basis: 33%;
-
-      &_el:nth-child(4) {
-        display: none;
-      }
-    }
+  .instagram_shots_list_el:nth-child(4) {
+    display: none;
   }
 }
+
 
 
 @media (min-width: 768px) {
