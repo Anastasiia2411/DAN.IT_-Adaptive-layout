@@ -65,8 +65,11 @@ function serve() {
     watch("src/scss/**.scss", series(scss)).on("change", sync.reload)
 }
 
-exports.build = series(clear, css, scss, js, imageMin)
-exports.dev = series(serve)
+const buildTask = series(clear, css, scss, js, imageMin);
+const devTask = series(buildTask, serve);
+
+exports.build = buildTask
+exports.dev = devTask;
 
 
 
